@@ -15,4 +15,4 @@
 
 (= (__ "$#A(*&987Zf") "AZ")
 
-;solution : #(apply str (re-seq #"[A-Z]" %))
+;solution :  #(apply str (re-seq #"[A-Z]" %))
