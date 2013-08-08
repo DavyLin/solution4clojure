@@ -8,12 +8,13 @@
 ;test not run	
 
 (= (take 5 (__ #(* 2 %) 1)) [1 2 4 8 16])
-test not run	
+;test not run	
 
 (= (take 100 (__ inc 0)) (take 100 (range)))
-test not run	
+;test not run	
 
-(= (take 9 (__ #(inc (mod % 3)) 1)) (take 9 (cycle [1 2 3])))
+;(= (take 9 (__ #(inc (mod % 3)) 1)) (take 9 (cycle [1 2 3])))
 
+;the solution :
 (fn it [f x]
   (lazy-seq (cons x (it f (f x)))))
