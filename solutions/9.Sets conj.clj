@@ -1,3 +1,3 @@
 ﻿(= #{1 2 3 4} (conj #{1 4 3} __))
 
-;solution :  2
+                                        ;the solution is  :  2
